@@ -1,0 +1,102 @@
+.container{ 
+  /* color: #7f8c97; */
+  max-width: 100rem;
+ /* height: 100%; */
+ /* text-align: center; */
+ /* margin: 0 auto; */
+ /* padding: 2em; */
+ /* position: relative; */
+}
+ 
+ .timeline {
+   position: relative;
+   width: auto;
+   margin: 0 auto;
+   margin-top: 5em;
+   padding-bottom: 2em;
+   padding-left: 0;
+ }
+ 
+ .timeline:before {
+   position: absolute;
+   left: 10%;
+   top: 0;
+   content: ' ';
+   display: block;
+   width: 4px;
+   height: 100%;
+   margin-left: -3px;
+   border: 3px solid black;
+   border-radius: 20px;
+   box-shadow: 0 3px 0 #060709;
+   width: 1rem;
+   background:  linear-gradient(180deg, #FF46AA 0%, #FF5050 100%);;
+   z-index: 5;
+ }
+ 
+ 
+ .dir-l, .dir-r{ 
+   max-width: 50rem;
+ position: relative; 
+ /* width: 40%;  */
+ padding: 1.5em 1em; 
+ background: #fff; 
+ /* box-shadow: 0 3px 0 #000000;  */
+ box-shadow: 5px 3px 3px #000000; 
+ margin-top: 0; 
+ margin-bottom: 1.5em;
+ border-radius: 8px;
+ border: 3px solid black;
+ left: 5%;
+ padding-left: 2rem;
+ z-index: 6;
+ }
+
+/* .dir-l{ float: left; } */
+ 
+/* .dir-l:before{
+ content: "";
+   display: inline-block;
+   vertical-align: middle;
+   width: 0; 
+   height: 0; 
+   position: absolute;
+   right: -.95em;
+   top: 1em;
+   border-top: 17px solid transparent;
+   border-bottom: 17px solid transparent; 
+   border-left: 15px solid rgb(0, 0, 0); 
+ } */
+ 
+ /* .dir-r{ float: right; } */
+ 
+ /* .dir-r:before{
+ content: "";
+   display: inline-block;
+   vertical-align: middle;
+   width: 0; 
+   height: 0; 
+   position: absolute;
+   left: -.9em;
+   top: 1em;
+ border-top: 17px solid transparent;
+ border-bottom: 17px solid transparent; 
+ border-right: 15px solid rgb(0, 0, 0); 
+ } */
+ 
+ .timeline-blocks{
+ display: block;
+ height: auto;
+ padding: 1em 0;
+ position: relative;
+ overflow: hidden;
+ }
+ 
+ .timeline-blocks .date-l, .timeline-blocks .date-r{
+ position: absolute;
+ top: 2em;
+ right: 58%;
+ font-size: 1em;
+}
+ 
+ .timeline-blocks .date-r{ left: 54%; right: auto;}
