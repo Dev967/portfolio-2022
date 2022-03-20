@@ -1,13 +1,11 @@
-import React, {useRef, useEffect} from 'react';
-import { Typo2 } from './typography/Typo2';
+import React, { useEffect} from 'react';
 import {motion, useAnimation} from 'framer-motion'
 import { useInView } from 'react-intersection-observer';
 import { Card } from './Card';
-import useOnScreen from './hooks/useOnScreen';
 import data from "../data/work"
 import { Title } from './Title';
 
-export const MyWork = ({}) => {
+export const MyWork = () => {
     const [ref, isVisible]= useInView({
         threshold: 0.2,
         delay: 100
@@ -16,7 +14,7 @@ export const MyWork = ({}) => {
 
     useEffect(() => {
         if(isVisible) control.start({x: 0})
-    }, [isVisible])
+    }, [isVisible, control])
     
     return(
     <div ref={ref}>
@@ -36,7 +34,9 @@ export const MyWork = ({}) => {
                 fontColor='white'
                 key={i}
                 rest={{margin: "1rem 0.5rem"}}
-                backgroundColor="linear-gradient(180deg, #E20088 0%, #E61788 22.37%, #F36688 100%)"
+                // backgroundColor="linear-gradient(180deg, #E20088 0%, #E61788 22.37%, #F36688 100%)"
+                backgroundColor="linear-gradient(180deg, #FCBDA1 0%, #F55568 100%)"
+                link={d.link}
                 title={d.name}
                 text={d.description}
                 tags={d.tags}

@@ -27,6 +27,10 @@ textarea{
   height: 40rem;
 }
 
+.hoverable:hover{
+  font-size: 3rem;
+}
+
 @media screen and (max-width: 480px) {
   textarea {
     width: 85vw;
@@ -38,5 +42,21 @@ textarea{
       
     width: 85vw;
     height: 25rem;
+  }
+}
+@media screen and (max-width: 370px)  {
+  .card{
+    height: auto !important;
+  }
+  .tags{
+    flex-wrap: wrap;
+    margin: 1rem 0;
+  }
+  .tag{
+    margin: 0.4rem 0;
+  }
+
+  .dir-l, .dir-r{
+    left: 1% !important;
   }
 }

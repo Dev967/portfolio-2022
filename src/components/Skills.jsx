@@ -1,11 +1,11 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect, } from 'react';
 import {motion, useAnimation} from 'framer-motion'
 import { useInView } from 'react-intersection-observer';
 import {Card} from './Card'
 import data from "../data/skills"
 import { Title } from './Title';
 
-export const Skills = ({}) => {
+export const Skills = () => {
 
     const [ref, inView] = useInView({
         threshold: 0.2,
@@ -19,7 +19,7 @@ export const Skills = ({}) => {
                 x: 0
             })
         }
-    }, [inView])
+    }, [inView, controls])
 
     return(
         <motion.div ref={ref}>
@@ -33,8 +33,9 @@ export const Skills = ({}) => {
             justifyContent: 'space-evenly', 
             alignContent: 'flex-start'
             }}>
-            {data.map(d => (
-                <Card 
+            {data.map((d, i) => (
+                <Card
+                key={i} 
                 rest={{margin: '1rem 0.5rem'}} 
                 title={d.name} 
                 text={d.description}

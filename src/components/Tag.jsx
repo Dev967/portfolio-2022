@@ -10,7 +10,9 @@ export const Tag = ({text, rest}) => {
             border: '2px solid black',
             backgroundColor: "white",
             ...rest
-        }}>
+        }}
+        className="tag"
+        >
             <Typo2 
             text={text} 
             border="" 

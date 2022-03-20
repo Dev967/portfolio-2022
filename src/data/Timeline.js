@@ -2,22 +2,27 @@ const Timeline = [
     {
         name: 'Cofiato',
         title: 'Web Development Intern',
-        date: '01/02/2021',
-        description: 'Web Dev Trick is a blog for web designers, graphic designers, web developers & SEO Learner as well as freelancers seeking to broaden their mind and also enhance their skills. We highly believe that top quality is much better than quantity. We share resources regarding design & development, graphics, WordPress as well as Coding. We share HTML5, CSS3, Bootstrap, JavaScript, PHP and many more web language’s Examples, Tutorials & Source Code as well as Graphic Desing and SEO’s stuff. '
+        date: 'Mar 2021 - Jun 2021',
+        description: 'As Web Development Inern at cofiato i developed front-end using Material UI and React. I also helped in Back-end using Nodjes and App development using React Native. I learnt Firebase since it was used for various services and i got to learn many new things including team work and Agile methodoloy.'
     },
 
     {
-        name: 'Cofiato',
-        title: 'Web Development Intern',
-        date: '01/02/2021',
-        description: 'Web Dev Trick is a blog for web designers, graphic designers, web developers & SEO Learner as well as freelancers seeking to broaden their mind and also enhance their skills. We highly believe that top quality is much better than quantity. We share resources regarding design & development, graphics, WordPress as well as Coding. We share HTML5, CSS3, Bootstrap, JavaScript, PHP and many more web language’s Examples, Tutorials & Source Code as well as Graphic Desing and SEO’s stuff. '
+        name: 'Perkant Tech',
+        title: 'Full-Stack Developer Intern',
+        date: 'Aug 2021 - Nov 2021',
+        description: 'Throughout my time as Full-Stack developer at PerkantTech i worked on real-time systems using socket.io, Node JS, PHP, MySQL and MongoDB for back-end and React JS, Bootstrap, Core-UI for front-end. Whole system was hosted on AWS and i used various services from AWS for building apps. Acted as Point of Contact with some clients and throughout whole internship i got to learn many new things, experienced professional work culture and got guidance from some industry experts.'
     },
-
+   {
+        name: 'Vacseen',
+        title: 'Full-Stack App Developer',
+        date: 'sept 2021 - dec 2021',
+        description: 'Vacseen is a Android app that i got as a freelance project. I developed back-end and front-end for the App. It was a unique experience since i also participated in meetings with the client. '
+    },
     {
-        name: 'Cofiato',
-        title: 'Web Development Intern',
-        date: '01/02/2021',
-        description: 'Web Dev Trick is a blog for web designers, graphic designers, web developers & SEO Learner as well as freelancers seeking to broaden their mind and also enhance their skills. We highly believe that top quality is much better than quantity. We share resources regarding design & development, graphics, WordPress as well as Coding. We share HTML5, CSS3, Bootstrap, JavaScript, PHP and many more web language’s Examples, Tutorials & Source Code as well as Graphic Desing and SEO’s stuff. '
+        name: 'Your corporation',
+        title: 'Some Awesome Role',
+        date: 'you decide',
+        description: 'Next place in this list is reserved for you'
     }
 ];
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import {motion, useAnimation} from "framer-motion"
 import { useInView } from 'react-intersection-observer';
 import { Typo2 } from './typography/Typo2';
@@ -15,7 +15,8 @@ export const Card = ({
     text="",
     rest,
     tags,
-    fontColor="#FF3263 "
+    fontColor="white ",
+    link
     }) => {
 
     const controls = useAnimation();
@@ -27,7 +28,7 @@ export const Card = ({
                 y: 0
             })
         }
-    }, [inView])
+    }, [inView, controls])
 
     return(
         <motion.div
@@ -43,22 +44,29 @@ export const Card = ({
             borderRadius: borderRadius,
             border: border,
             boxShadow: '5px 5px 3px black',
-            }}>
+            cursor: link ? "pointer" : 'initial',
+        }}
+        onClick={() => {
+            if(link)  window.open(link, "_blank")
+        }}
+        className="card">
                 <div style={{height: '5rem', margin: 'auto auto'}}>
-                    <Typo2 fs={titleSize} color={fontColor} border="1px black" text={title} rest={{textAlign: 'center', marginTop: "1rem"}}/>
+                    <Typo2 fs={titleSize} color={fontColor} border="2px black" text={title} rest={{textAlign: 'center', marginTop: "1rem"}}/>
                 </div>
 
-                <div style={{height: '7rem'}}>
+                <div style={{height: '7rem', padding: "0 3px" }}>
                     <Typo2 fs="1.8rem" border="0px solid white" color="black" rest={{textAlign: 'center', marginTop: '1rem', fontWeight: 'lighter'}} text={text} />
                 </div>
                 {tags && (
-                <div style={{
+                <div 
+                className="tags" 
+                style={{
                     display:'flex', 
                     justifyContent: 'space-evenly', 
                     alignItems: 'center'
                     }}>
-                    {tags.map(t => (
-                        <Tag text={t} />
+                    {tags.map((t, i) => (
+                        <Tag key={i} text={t} />
                     ))}
                 </div>
                 )}

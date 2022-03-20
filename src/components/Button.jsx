@@ -1,5 +1,4 @@
 import React from 'react';
-import {Typo2} from './typography/Typo2'
 
 export const Button = ({text, rest, onClick, loading, loadingText}) => {
     if(loading) return(
