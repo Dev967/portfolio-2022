@@ -11,7 +11,7 @@ import blogIcon from "../assets/blog.png"
 
 export const Contact = () => {
     const [sending, setSending] = useState(false)
-    const [textMessage, setTextMessage] = useState("Hi Anand, ")
+    const [textMessage, setTextMessage] = useState("FROM - ")
     const textRef = useRef();
     const [ref, isVisible] = useInView({threshold: 0.2, delay: 100})
     const control = useAnimation()
@@ -54,7 +54,7 @@ export const Contact = () => {
 
 
     return (
-        <div ref={ref}>
+        <div ref={ref} style={{paddingBottom: '15px'}}>
             <motion.div animate={control}
                 initial={
                     {x: '-100vw  '}
@@ -91,7 +91,7 @@ export const Contact = () => {
                             alert("Copied to clipboard")
 navigator.clipboard.writeText("devanandparmar@protonmail.com")
                         }}  src={mailIcon} />
-                        <img style={{margin: "0 1rem", cursor: "pointer", width: 50}} alt="blog" onClick={() => window.open("https://dev967.github.io/knowledgebase/", "_blank")}  src={blogIcon} />
+                        <img style={{margin: "0 1rem", cursor: "pointer", width: 50}} alt="blog" onClick={() => window.open("https://www.dropbox.com/s/iomdmbpfec09rzy/Resume%20-%20Anand%20Parmar.pdf?dl=0", "_blank")}  src={blogIcon} />
                     </div>
                 </div>
                     <motion.div initial={
