@@ -42,7 +42,7 @@ export const MyJourney = () => {
                 {
                     minHeight: '100vh',
                     maxWidth: '100vw',
-                    overflowX: 'visible'
+                    overflowX: 'hidden'
                 }
         }>
             <div>
