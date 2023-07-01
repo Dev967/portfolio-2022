@@ -1,3 +1,1 @@
-# TODO:
-- [ ] SEO
-- [ ] Analytics
+live-website: https://devparmar.netlify.app/
